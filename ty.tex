@@ -1,0 +1,41 @@
+% Title formatting
+\usepackage{titling}
+\pretitle{\begin{flushleft}\vfill\huge\bfseries}
+\posttitle{\end{flushleft}}
+\preauthor{\begin{flushleft}\normalsize}
+\postauthor{\end{flushleft}\vfill}
+
+% Page formatting
+\usepackage{graphicx}
+\usepackage{verbatim} % used to display code
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\pagenumbering{gobble}
+\pagestyle{fancy}
+\fancyhf{}
+\fancypagestyle{plain}{\pagestyle{fancy}}
+\addtolength{\headheight}{0.8cm}
+\lhead{Omics Techniques - \today}
+\rhead{\thepage}
+
+\definecolor{Brown}{cmyk}{0,0.81,1,0.60}
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.9}
+
+% Code blocks formatting
+\lstset{
+  framexleftmargin=5mm,
+  frame=none,
+  rulesepcolor=\color{gray},
+  backgroundcolor=\color[gray]{0.95},
+  columns=flexible,
+  basicstyle=\footnotesize\ttfamily,
+  stringstyle=\color{OliveGreen},
+  keywordstyle=\color{CadetBlue},
+  commentstyle=\color{teal},
+  keepspaces=true,
+  showstringspaces=false,
+  numbers=none,
+  breaklines=true}
